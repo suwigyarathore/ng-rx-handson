@@ -24,5 +24,6 @@ export class AddProductComponent implements OnInit {
   onSubmit() {
     const { productName } = this.productForm.value;
     console.log("Product Name:", productName);
+    this.productForm.controls["productName"].setValue("");
   }
 }
