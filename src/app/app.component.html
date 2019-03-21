@@ -2,14 +2,18 @@
   <span [routerLink]="['']">NG-RX Shopping</span>
   <span class="example-spacer"></span>
   <mat-icon
-    [routerLink]="['/cart']"
     class="example-icon"
-    aria-hidden="false"
-    aria-label="Example user verified icon"
     matBadge="8"
     matBadgePosition="before"
     matBadgeColor="accent"
     >shopping_cart</mat-icon
+  >
+  <mat-icon
+    class="example-icon"
+    matBadgePosition="before"
+    matBadgeColor="accent"
+    [matTooltip]="'Current Favorite'"
+    >favorite</mat-icon
   ></mat-toolbar
 >
 <router-outlet></router-outlet>
