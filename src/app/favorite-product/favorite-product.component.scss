@@ -1,0 +1,16 @@
+.app-favorite-product {
+  height: 80vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  mat-card {
+    width: 33%;
+    mat-radio-group {
+      display: flex;
+      flex-direction: column;
+      mat-radio-button {
+        padding-top: 16px;
+      }
+    }
+  }
+}

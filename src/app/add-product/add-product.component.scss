@@ -5,9 +5,9 @@
   align-items: center;
   mat-card {
     width: 33%;
-  }
-  mat-card-content {
-    display: flex;
-    flex-direction: column;
+    form {
+      display: flex;
+      flex-direction: column;
+    }
   }
 }

@@ -1,3 +1,22 @@
-<p>
-  favorite-product works!
-</p>
+<div class="app-favorite-product">
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Shopping Cart</mat-card-title>
+      <mat-card-subtitle>Mark Your Favorite </mat-card-subtitle>
+    </mat-card-header>
+    <mat-card-content>
+      <mat-radio-group
+        aria-labelledby="example-radio-group-label"
+        class="example-radio-group"
+        (change)="favoriteChanged($event)"
+      >
+        <mat-radio-button class="example-radio-button" [value]="'season1'">
+          {{ "Product 1" }}
+        </mat-radio-button>
+        <mat-radio-button class="example-radio-button" [value]="'season2'">
+          {{ "Product 2" }}
+        </mat-radio-button>
+      </mat-radio-group>
+    </mat-card-content>
+  </mat-card>
+</div>

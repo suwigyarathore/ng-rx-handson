@@ -1,15 +1,16 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit } from "@angular/core";
 
 @Component({
-  selector: 'app-favorite-product',
-  templateUrl: './favorite-product.component.html',
-  styleUrls: ['./favorite-product.component.scss']
+  selector: "app-favorite-product",
+  templateUrl: "./favorite-product.component.html",
+  styleUrls: ["./favorite-product.component.scss"]
 })
 export class FavoriteProductComponent implements OnInit {
+  constructor() {}
 
-  constructor() { }
+  ngOnInit() {}
 
-  ngOnInit() {
+  favoriteChanged(event) {
+    console.log("Favorite product:", event.value);
   }
-
 }

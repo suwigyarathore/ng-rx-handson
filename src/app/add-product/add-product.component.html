@@ -5,10 +5,23 @@
       <mat-card-subtitle>Go for it!</mat-card-subtitle>
     </mat-card-header>
     <mat-card-content>
-      <mat-form-field>
-        <input matInput placeholder="Add Product" />
-      </mat-form-field>
-      <button mat-raised-button color="primary">Primary</button>
+      <form [formGroup]="productForm" (ngSubmit)="onSubmit()">
+        <mat-form-field>
+          <input
+            formControlName="productName"
+            matInput
+            placeholder="Add Product"
+          />
+        </mat-form-field>
+        <button
+          type="submit"
+          mat-raised-button
+          color="primary"
+          [disabled]="!productForm.valid"
+        >
+          Add To Cart
+        </button>
+      </form>
     </mat-card-content>
   </mat-card>
 </div>
